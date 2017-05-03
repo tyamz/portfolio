@@ -1,47 +1,44 @@
 package CodingChallenges;
 
-/**
- * @author Thomas Yamakaitis
- * @description Just a small coding challenge.
- * @version URL v1.0
- */
-
 public class URL {
-	
 	/**
-	 * @description URLify ~ A small method that makes a string with spaces URL Friendly!
-	 * @param str
-	 * @param length
+	 * URLify v2.0
+	 * @description Replace spaces with '%20' and remove leading and trailing spaces altogether.
+	 * @param text
 	 * @return String
 	 */
-	
-	public static String URLify(String str) {
-		int length = str.length();
-		str = str.trim();
-		int trueL = 0;
-		if(str.contains(" ")) {
-			char[] oldArr = str.toCharArray();
-			char[] newArr = new char[length];
-			for(int i = 0; trueL < length; i++) {
-				if(i >= oldArr.length) {
-					break;
-				} else if(oldArr[i] == ' ') {
-					newArr[trueL] = '%';
-					newArr[trueL+1] = '2';
-					newArr[trueL+2] = '0';
-					trueL = trueL + 3;
-				} else {
-					newArr[trueL] = oldArr[i];
-					trueL++;
-				}
-			}
-			str = new String(newArr, 0, trueL);
+	public static String URLify(String text) {
+		int startIndex = 0;
+		int endIndex = text.length() - 1;
+		
+		if(!text.contains(" ")) {
+			return text;
 		}
-		return str;
+		
+		// Find starting index (after all leading spaces, if any)
+		while(text.charAt(startIndex) == ' ' && startIndex < endIndex) {
+			startIndex++;
+		}
+		
+		// Find ending index (before all trailing spaces, if any)
+		while(text.charAt(endIndex) == ' ' && endIndex >= startIndex) {
+			endIndex--;
+		}
+		
+		StringBuilder urlified = new StringBuilder();
+		
+		for (int i = startIndex; i < endIndex + 1; i++) {
+			if(text.charAt(i) != ' ') {
+				urlified.append(text.charAt(i));
+			} else {
+				urlified.append("%20");
+			}
+		}
+		
+		return urlified.toString();
 	}
 	public static void main(String[] args) {
-		String str = "   https://tyamz.com/  Mr John Smith    ";
-		str = URLify(str);
-		System.out.print(str);
+		String str = "    https://tyamz.com/ thomas_yamakaitis  .pdf    ";
+		System.out.print(URLify(str));
 	}
 }

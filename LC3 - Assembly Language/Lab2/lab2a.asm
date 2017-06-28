@@ -1,0 +1,9 @@
+.ORIG x3000
+LD R0, x0FF
+LD R1, x0FF
+ADD R0, R0, R0
+ADD R1, R1, #-1
+BRp #-3
+ST R0, x0FC
+HALT
+.END

@@ -1,0 +1,13 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ASCII                   300F
+//	Division                3048
+//	ENDLINE                 302C
+//	FAIL                    303E
+//	FAIL1                   305E
+//	JUMP                    3044
+//	JUMP1                   3064
+//	LOOP                    3034
+//	LOOP1                   3053
+//	Multiply                302D
+//	WRONG                   3010

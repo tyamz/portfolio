@@ -1,16 +1,20 @@
 package CodingTest;
 
+/**
+ * This was for a coding test in my class, it is incomplete.
+ */
+
 public class Solution {
-	
+
 	Solution() {}
-	
+
 	static class TreeNode {
 		int val;
 		TreeNode left;
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
-	
+
     public static int minDepth(TreeNode root) {
     	if (root == null) return 0;
     	TreeNode current = root;
@@ -26,7 +30,7 @@ public class Solution {
     		return l+1;
     	}
     }
-    
+
     public static void main(String...strings) {
     	TreeNode n1 = new TreeNode(20);
     	TreeNode n2 = new TreeNode(10);

@@ -3,22 +3,30 @@
 This Portfolio contains my projects from School and my personal projects started on my own account.
 ## About Me
 I am a Student currently pursuing a Bachelor's of Science (B.S.) in Computer Science at Kean University.
-Programming is not only a career path for me, it is a hobby. I really enjoy programming and "perfecting" my 
+Programming is not only a career path for me, it is a hobby. I really enjoy programming and "perfecting" my
 programs even after they've been completed. I constantly strive to improve efficiency and effectiveness in my programs
 ## Skills
 ### Programming Languages
 - Java
 - PHP
 - JavaScript
+- C# (Novice)
 - C++ (Novice)
 - Ruby (Novice)
 ### Database Management
 - MySQL
+- SQLite3 / SQLite
 ### Other Skills & Knowledge
 - Data Structures
 - Object-Oriented Analysis & Design
 - Database Management & Design
 ## Relevant Work Experience
+### The Compuflex Corporation (http://compuflexcorp.com/) | 6/17 - Present
+#### Intern - Programmer
+- Revamped entire company website (static to dynamic)
+- Worked with PHP, Laravel5, and OctoberCMS (based on Laravel)
+- Got a better understanding of Object-Oriented design in PHP.
+- Taught myself C# and a little more JavaScript.
 ### Rogu3 - Web Design & Development (https://rogu3.org/) | 8/14 - Present
 #### Lead Developer / Owner
 - Created front- and back-end web applications using PHP, HTML5, CSS, and JavaScript.
